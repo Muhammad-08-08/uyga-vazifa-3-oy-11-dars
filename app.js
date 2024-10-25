@@ -17,73 +17,64 @@
 
 //? 1-misol tugadi
 
-//? 2-misol
+// ? 2-misol
 
-// function ord(a) {
-//   console.log(a() + 16);
+// function ord(ordernumber, callback){
+//     callback(ordernumber);
 // }
+// ord(444, (num) => {
+//     console.log(`qayta ishlangan order  ${num}`);
 
-// ord(() => 100);
+// })
 
-// function highOrder() {
-//   return function () {
-//     console.log(55);
-//   };
-// }
-// function call(a) {
-//   return a();
-// }
-// console.log(call(() => 123 + 102));
+// ? 2-misol tugadi
 
-//? 2-misol tugadi
+// ? 3-misol
 
-//? 3-misol
-
-// function date1() {
+// (function () {
 //   let date = new Date();
-//   console.log(`hozirgi sana ${date}`);
+//   console.log(
+//     `hozirgi kun ${date.getDate()}, oy ${
+//       date.getMonth() + 1
+//     }, yil ${date.getFullYear()},`,
+//     `vaqt  soat ${date.getHours()},  minut ${date.getMinutes()},  sekund ${date.getSeconds()}`
+//   );
+// })();
+
+// ? 3-misol tugadi
+
+// ? 4-misol
+
+// function filteritems(arr, arr1) {
+//   return arr.filter(arr1);
 // }
-// date1();
+// let Numbers = [1,2,3,4,5,6];
+// console.log(filteritems(Numbers, (n) => n > 3));
 
-//? 3-misol tugadi
+// ? 4-misol tugadi
 
-//? 4-misol
+// ? 5-misol
 
-// function Sonlar1(sonlar) {
-//     return sonlar.filter((son) => son > 3);
-//   }
-
-//   let sonlar2 = [1, 2, 3, 4, 5, 6];
-
-//   let natija =  Sonlar1(sonlar2);
-
-//   console.log(natija);
-
-//? 4-misol tugadi
-
-//? 5-misol
-
-// let person = {
-//   firstname: "John",
-//   lastname: "Doe",
-// };
-// function getfulname(person) {
-//   return (`${person.firstname} ${person.lastname}`);
+// let person ={
+//     firstnames: 'John',
+//     lastnames: 'Doe',
+//     birlash(){
+//         return `${this.firstnames} ${this.lastnames}`
+//     },
 // }
-
-// let bir = getfulname(person);
-
-// console.log(bir);
+// console.log(person.birlash());
 
 // ? 5-misol tugadi
 
 // ? 6-misol
 
-// let person = {
-//   firstname: "John",
-//   lastname: "Doe",
-// };
-// console.log(person.firstname.ceo?.lastname);
+let company = {
+    name: 'teach corp',
+    location: 'San Fransisko',
+    ceo: {name: 'Jane Doe'},
+}
+console.log(company?.name?.location?.ceo?.job);
+
 
 // ? 6-misol tugadi
 
